@@ -1,13 +1,13 @@
-name: Scheduled Workflow
+name: Run every 5 minutes
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/5 * * * *'  # Triggers workflow every 5 minutes (UTC)
 
 jobs:
-  scheduled-job:
+  example:
     runs-on: ubuntu-latest
     steps:
-      - name: Run scheduled task
-        run: echo "Scheduled workflow running."
-        
+      - name: Say Hello
+        run: echo "This workflow runs every 5 minutes"
+
