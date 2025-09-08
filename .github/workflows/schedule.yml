@@ -2,7 +2,7 @@ name: Run every 5 minutes
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Triggers workflow every 5 minutes (UTC)
+    - cron: '0 2 * * *'  # Triggers workflow every 5 minutes (UTC)
 
 jobs:
   example:
