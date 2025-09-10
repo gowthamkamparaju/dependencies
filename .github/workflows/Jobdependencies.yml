@@ -18,7 +18,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: [build, test]   # Runs only if both build & test succeed
+    needs: [build, test]   # Runs only if both build & te
     steps:
       - run: echo "Deploying app..."
       
